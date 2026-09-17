@@ -1,0 +1,17 @@
+<Solution>
+  <Project Path="Bai01/Bai01.csproj" />
+  <Project Path="Bai02/Bai02.csproj" />
+  <Project Path="Bai03/Bai03.csproj" />
+  <Project Path="Bai04/Bai04.csproj" />
+  <Project Path="Bai05/Bai05.csproj" />
+  <Project Path="Bai06/Bai06.csproj" />
+  <Project Path="Bai07/Bai07.csproj" />
+  <Project Path="Bai08/Bai08.csproj" />
+  <Project Path="Bai09/Bai09.csproj" />
+  <Project Path="Bai10/Bai10.csproj" />
+  <Project Path="Bai11/Bai11.csproj" />
+  <Project Path="Bai12/Bai12.csproj" />
+  <Project Path="Bai13/Bai13.csproj" />
+  <Project Path="Bai14/Bai14.csproj" />
+  <Project Path="Bai15/Bai15.csproj" />
+</Solution>

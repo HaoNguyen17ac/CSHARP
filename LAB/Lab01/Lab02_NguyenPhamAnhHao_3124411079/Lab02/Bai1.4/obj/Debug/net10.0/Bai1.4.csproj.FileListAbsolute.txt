@@ -1,0 +1,14 @@
+/Users/haoemdayne/Documents/CSHARP/Lab02/Bai1.4/obj/Debug/net10.0/Bai1.4.GeneratedMSBuildEditorConfig.editorconfig
+/Users/haoemdayne/Documents/CSHARP/Lab02/Bai1.4/obj/Debug/net10.0/Bai1.4.AssemblyInfoInputs.cache
+/Users/haoemdayne/Documents/CSHARP/Lab02/Bai1.4/obj/Debug/net10.0/Bai1.4.AssemblyInfo.cs
+/Users/haoemdayne/Documents/CSHARP/Lab02/Bai1.4/obj/Debug/net10.0/Bai1.4.csproj.CoreCompileInputs.cache
+/Users/haoemdayne/Documents/CSHARP/Lab02/Bai1.4/bin/Debug/net10.0/Bai1.4
+/Users/haoemdayne/Documents/CSHARP/Lab02/Bai1.4/bin/Debug/net10.0/Bai1.4.deps.json
+/Users/haoemdayne/Documents/CSHARP/Lab02/Bai1.4/bin/Debug/net10.0/Bai1.4.runtimeconfig.json
+/Users/haoemdayne/Documents/CSHARP/Lab02/Bai1.4/bin/Debug/net10.0/Bai1.4.dll
+/Users/haoemdayne/Documents/CSHARP/Lab02/Bai1.4/bin/Debug/net10.0/Bai1.4.pdb
+/Users/haoemdayne/Documents/CSHARP/Lab02/Bai1.4/obj/Debug/net10.0/Bai1.4.dll
+/Users/haoemdayne/Documents/CSHARP/Lab02/Bai1.4/obj/Debug/net10.0/refint/Bai1.4.dll
+/Users/haoemdayne/Documents/CSHARP/Lab02/Bai1.4/obj/Debug/net10.0/Bai1.4.pdb
+/Users/haoemdayne/Documents/CSHARP/Lab02/Bai1.4/obj/Debug/net10.0/Bai1.4.genruntimeconfig.cache
+/Users/haoemdayne/Documents/CSHARP/Lab02/Bai1.4/obj/Debug/net10.0/ref/Bai1.4.dll

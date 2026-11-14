@@ -1,0 +1,14 @@
+/Users/haoemdayne/BaiThucHanhLINQ/bin/Debug/net10.0/BaiThucHanhLINQ
+/Users/haoemdayne/BaiThucHanhLINQ/bin/Debug/net10.0/BaiThucHanhLINQ.deps.json
+/Users/haoemdayne/BaiThucHanhLINQ/bin/Debug/net10.0/BaiThucHanhLINQ.runtimeconfig.json
+/Users/haoemdayne/BaiThucHanhLINQ/bin/Debug/net10.0/BaiThucHanhLINQ.dll
+/Users/haoemdayne/BaiThucHanhLINQ/bin/Debug/net10.0/BaiThucHanhLINQ.pdb
+/Users/haoemdayne/BaiThucHanhLINQ/obj/Debug/net10.0/BaiThucHanhLINQ.GeneratedMSBuildEditorConfig.editorconfig
+/Users/haoemdayne/BaiThucHanhLINQ/obj/Debug/net10.0/BaiThucHanhLINQ.AssemblyInfoInputs.cache
+/Users/haoemdayne/BaiThucHanhLINQ/obj/Debug/net10.0/BaiThucHanhLINQ.AssemblyInfo.cs
+/Users/haoemdayne/BaiThucHanhLINQ/obj/Debug/net10.0/BaiThucHanhLINQ.csproj.CoreCompileInputs.cache
+/Users/haoemdayne/BaiThucHanhLINQ/obj/Debug/net10.0/BaiThucHanhLINQ.dll
+/Users/haoemdayne/BaiThucHanhLINQ/obj/Debug/net10.0/refint/BaiThucHanhLINQ.dll
+/Users/haoemdayne/BaiThucHanhLINQ/obj/Debug/net10.0/BaiThucHanhLINQ.pdb
+/Users/haoemdayne/BaiThucHanhLINQ/obj/Debug/net10.0/BaiThucHanhLINQ.genruntimeconfig.cache
+/Users/haoemdayne/BaiThucHanhLINQ/obj/Debug/net10.0/ref/BaiThucHanhLINQ.dll

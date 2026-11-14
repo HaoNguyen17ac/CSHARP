@@ -1,0 +1,1 @@
+Server=localhost;Database=QLSinhVien;Trusted_Connection=True;TrustServerCertificate=True;

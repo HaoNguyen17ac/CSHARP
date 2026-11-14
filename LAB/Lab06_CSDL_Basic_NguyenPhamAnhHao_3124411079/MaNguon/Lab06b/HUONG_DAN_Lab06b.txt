@@ -1,0 +1,70 @@
+﻿LAB06B - TƯƠNG TÁC CƠ SỞ DỮ LIỆU
+Nguyễn Phạm Anh Hào - 3124411079
+
+PHẠM VI
+- Chỉ làm mục 2 Bài tập tại lớp: Bài 1 SinhVien và Bài 2 Diem.
+- Không đưa bài tập mẫu, nâng cao hoặc bài quản lý cửa hàng vào chương trình.
+
+CÁCH MỞ VÀ CHẠY
+1. Dùng Windows, Visual Studio có workload .NET desktop development và
+   .NET Framework 4.8 Developer Pack. Đây là Windows Forms, không chạy
+   trực tiếp trên macOS/Linux.
+2. Chạy Database/Create_QLSinhVien.sql của gói bài nộp trong SSMS trên
+   SQL Server LocalDB hoặc SQL Server Express. Script dùng chung cho 6a/6b.
+3. Mở Lab06b.sln. Kiểm tra Lab06b/App.config:
+   Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=QLSinhVien;
+   Integrated Security=True;Connect Timeout=10
+   Nếu server là .\SQLEXPRESS hoặc tên khác, sửa đúng Data Source.
+   Chạy script SQL và ứng dụng trên CÙNG server/instance.
+4. Build Solution, nhấn F5; chọn Bài 1 hoặc Bài 2 trong cửa sổ chính.
+   Không cần kéo thả control: các form được dựng bằng C# trong file *Form.cs.
+
+BÀI 1 - QUẢN LÝ SINH VIÊN
+- Khi thêm/sửa: nhập mã, họ tên, tích ô chọn ngày sinh, chọn mã lớp.
+- Tuổi = năm hiện tại - năm sinh; phải từ 17 tuổi.
+- Thêm từ chối mã trùng. Sửa cập nhật họ tên/ngày sinh/lớp theo mã hiện có.
+- Xóa chỉ cần mã sinh viên, có hộp thoại xác nhận. Sinh viên có điểm sẽ
+  bị chặn xóa để giữ khóa ngoại; cần xử lý điểm liên quan trước.
+
+BÀI 2 - CẬP NHẬT ĐIỂM
+- Chọn mã sinh viên, mã môn học và nhập điểm khi thêm/sửa.
+- Quy ước thang điểm 0 đến 10, bao gồm 0 và 10; tối đa 2 số thập phân.
+  Chấp nhận 8,5 hoặc 8.5. Không tự làm tròn số quá 2 chữ số thập phân.
+- Khóa chính gồm cả mã sinh viên và mã môn học. Mỗi cặp có một dòng điểm.
+- Sửa chỉ thay đổi điểm. Xóa chỉ cần chọn cặp mã, không cần nhập lại điểm.
+- Nếu vừa thêm sinh viên ở Bài 1, đóng form và mở Bài 2 để tải danh sách mới.
+
+VAI TRÒ CÁC FILE
+- Program.cs, MainForm.cs: chạy ứng dụng và mở bài tập.
+- SinhVienForm.cs, DiemForm.cs, Ui.cs: giao diện và xử lý sự kiện.
+- SinhVienService.cs, DiemService.cs: toàn bộ kiểm tra và CRUD của hai bài.
+- Db.cs: SqlConnection, SqlCommand, SqlDataReader và tham số SQL.
+- App.config: cấu hình kết nối.
+
+ĐỐI CHIẾU KẾT QUẢ
+- Sau thao tác, chạy script chỉ đọc Database/02_KiemTraKetQua.sql (từ thư mục gốc gói nộp) để xem bảng.
+- Các thông báo chỉ hiện thành công sau khi ExecuteNonQuery tác động đúng 1 dòng.
+- Bộ ca bên dưới là ca kiểm thử để chạy trên Windows/SQL Server, không phải
+  lời xác nhận rằng thao tác CSDL đã được thực thi trong môi trường soạn bài.
+
+CA KIỂM THỬ (BẮT ĐẦU TỪ DỮ LIỆU MẪU CHƯA CHỈNH SỬA)
+1. Bài 1: thêm SV006, Nguyễn Văn Minh, 01/01/2006, DCT1241.
+   Mong đợi: có 1 dòng SV006 trong SinhVien.
+2. Nhấn Thêm lần nữa với SV006. Mong đợi: báo trùng mã, không thêm dòng.
+3. Thêm SV007 với năm sinh = năm hiện tại - 16.
+   Mong đợi: báo chưa đủ 17 tuổi, không thêm.
+4. Đổi tên SV006 thành Nguyễn Văn Minh A, nhấn Sửa.
+   Mong đợi: tên cập nhật; mã vẫn là SV006.
+5. Xóa SV001. Mong đợi: bị chặn vì SV001 đã có điểm CSHARP.
+6. Bài 2: thêm SV006/CSHARP, điểm 8,5. Mong đợi: có dòng điểm 8.50.
+7. Thêm lại SV006/CSHARP. Mong đợi: báo trùng khóa ghép.
+8. Sửa SV006/CSHARP lần lượt thành 0 và 10. Mong đợi: đều hợp lệ.
+9. Nhập -1, 10.01, abc, hoặc 8.555. Mong đợi: từ chối, giữ nguyên điểm cũ.
+10. Xóa SV006/CSHARP rồi xóa SV006. Mong đợi: hai thao tác thành công.
+11. Bỏ trống trường khi thêm, bỏ chọn ngày sinh/mã lớp hoặc mã môn.
+    Mong đợi: thông báo trường thiếu, không ghi dữ liệu.
+12. Sửa/xóa một cặp điểm hoặc mã sinh viên không tồn tại.
+    Mong đợi: báo không tồn tại, không tác động dòng khác.
+
+Lưu ý: script tạo dữ liệu mẫu không khôi phục các dòng đã được sửa nếu mã
+đó còn tồn tại. Muốn lặp ca thử với trạng thái ban đầu, dùng CSDL bài tập riêng.

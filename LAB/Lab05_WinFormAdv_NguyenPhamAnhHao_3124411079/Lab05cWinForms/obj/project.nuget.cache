@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "hjH+LNUtwuM=",
+  "success": true,
+  "projectFilePath": "/Users/haoemdayne/Downloads/Lab05cWinForms/Lab05cWinForms.csproj",
+  "expectedPackageFiles": [
+    "/Users/haoemdayne/.nuget/packages/microsoft.netcore.app.ref/8.0.31/microsoft.netcore.app.ref.8.0.31.nupkg.sha512",
+    "/Users/haoemdayne/.nuget/packages/microsoft.windowsdesktop.app.ref/8.0.31/microsoft.windowsdesktop.app.ref.8.0.31.nupkg.sha512",
+    "/Users/haoemdayne/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.31/microsoft.aspnetcore.app.ref.8.0.31.nupkg.sha512",
+    "/Users/haoemdayne/.nuget/packages/microsoft.netcore.app.host.osx-arm64/8.0.31/microsoft.netcore.app.host.osx-arm64.8.0.31.nupkg.sha512"
+  ],
+  "logs": []
+}
